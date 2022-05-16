@@ -43,7 +43,8 @@ const Home = () => {
                 <td>{user.username}</td>
                 <td>{user.email}</td>
                 <td>
-                    <NavLink to={`/users/view/${user.id}`} className="btn btn-primary mr-2 ">View</NavLink>
+                    <NavLink to={`/users/view
+                    /${user.id}`} className="btn btn-primary mr-2 ">View</NavLink>
                     <NavLink to={`/users/edit/${user.id}`} className="btn btn-outline-primary mr-2">Edit</NavLink>
                     <NavLink to="/" className="btn btn-danger" onClick={() => deleteUser(user.id)}>Delete</NavLink>
                 </td>
