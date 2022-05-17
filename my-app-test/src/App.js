@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Student from "./Student";
 
 // Function Based
 // function App() {
@@ -11,10 +12,16 @@ import "./App.css";
 // }
 
 // Class Based
-class App extends React.Component{
-  render(){
-    return<h1 className="App">Hello React Application</h1>;
-  };
-};
+class App extends React.Component {
+  render() {
+    return (
+      <>
+        <h2 className="App">Hello</h2>
+        <h2 className="App">Fluxbyte Technologies</h2>
+        <Student />
+      </>
+    );
+  }
+}
 
 export default App;
