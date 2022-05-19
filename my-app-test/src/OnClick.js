@@ -5,22 +5,26 @@ class Onclick extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      Id: 1,
       Name: " ReactJs",
       Tech: "JavaScript",
     };
     // this.handleClick = this.handleClick.bind(this);
   }
-  handleClick = () => {
-    console.log("Button Clicked", this);
+  handleClick = (Id) => {
+    console.log("Button Clicked", Id, this);
     this.setState({ Name: " Jay" });
   };
+
+  handleClickArg = () =>{
+    this.handleClick(this.state.Id);
+  };
   render() {
-    console.log(this.state.Name)
     return (
       <div className="App">
         <h1>Hello{this.state.Name}</h1>
-        <button className="btn btn-primary" onClick={this.handleClick}>
-          Add Data
+        <button className="btn btn-danger" onClick={this.handleClickArg}>
+          Delete
         </button>
       </div>
     );

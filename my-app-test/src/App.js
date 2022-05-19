@@ -18,7 +18,6 @@ import Onclick from "./OnClick";
 // Class Based
 class App extends React.Component {
   render() {
-    console.log("App Render");
     return (
       <>
         <StateWithoutConstructor />
