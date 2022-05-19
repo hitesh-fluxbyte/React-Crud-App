@@ -16,7 +16,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <h2 className="App">Hello</h2>
+        <h2 className="App">Hy</h2>
         <h2 className="App">Fluxbyte Technologies</h2>
         <Student />
       </>
@@ -25,4 +25,3 @@ class App extends React.Component {
 }
 
 export default App;
- 
