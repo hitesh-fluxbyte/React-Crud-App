@@ -5,6 +5,7 @@ import App from "./App";
 import Student from "./Student";
 import Children from "./Children";
 import StateWithoutConstructor from "./State_Without_Constructor";
+import StateWithConstructor from "./State_With_Constructor";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     <Student />
     <App />
     <StateWithoutConstructor />
+    <StateWithConstructor />
     <Children>I'm a Child</Children>
   </React.StrictMode>
 );
