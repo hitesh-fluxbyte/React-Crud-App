@@ -23,8 +23,8 @@ class Onclick extends Component {
     return (
       <div className="App">
         <h1>Hello{this.state.Name}</h1>
-        <button className="btn btn-danger" onClick={this.handleClickArg}>
-          Delete
+        <button className="btn btn-warning" onClick={this.handleClickArg}>
+          Change
         </button>
       </div>
     );

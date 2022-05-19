@@ -7,27 +7,31 @@ import Children from "./Children";
 import Onclick from "./OnClick";
 
 // Function Based
-// function App() {
-//   return (
-//     <div className="App">
-//     <h1>Hello React</h1>
-//     </div>
-//   );
-// }
+function App() {
+  return (
+    <>
+      <StateWithoutConstructor />
+      <Student />
+      <StateWithConstructor />
+      <Children>I'm a Child</Children>
+      <Onclick />
+    </>
+  );
+}
 
 // Class Based
-class App extends React.Component {
-  render() {
-    return (
-      <>
-        <StateWithoutConstructor />
-        <Student />
-        <StateWithConstructor />
-        <Children>I'm a Child</Children>
-        <Onclick />
-      </>
-    );
-  }
-}
+// class App extends React.Component {
+//   render() {
+//     return (
+//       <>
+//         <StateWithoutConstructor />
+//         <Student />
+//         <StateWithConstructor />
+//         <Children>I'm a Child</Children>
+//         <Onclick />
+//       </>
+//     );
+//   }
+// }
 
 export default App;
