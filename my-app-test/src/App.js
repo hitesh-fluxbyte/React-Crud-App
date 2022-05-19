@@ -12,8 +12,8 @@ function App() {
     <>
       <StateWithoutConstructor />
       <Student />
-      <StateWithConstructor />
       <Children>I'm a Child</Children>
+      <StateWithConstructor />
       <Onclick />
     </>
   );
