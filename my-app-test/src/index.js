@@ -2,19 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import Student from "./Student";
-import Children from "./Children";
-import StateWithoutConstructor from "./State_Without_Constructor";
-import StateWithConstructor from "./State_With_Constructor";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Student />
     <App />
-    <StateWithoutConstructor />
-    <StateWithConstructor />
-    <Children>I'm a Child</Children>
   </React.StrictMode>
 );
 

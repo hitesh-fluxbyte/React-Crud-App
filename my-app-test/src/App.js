@@ -1,6 +1,10 @@
 import React from "react";
 import "./App.css";
 import Student from "./Student";
+import StateWithConstructor from "./State_With_Constructor";
+import StateWithoutConstructor from "./State_Without_Constructor";
+import Children from "./Children";
+import Onclick from "./OnClick";
 
 // Function Based
 // function App() {
@@ -14,11 +18,14 @@ import Student from "./Student";
 // Class Based
 class App extends React.Component {
   render() {
+    console.log("App Render");
     return (
       <>
-        <h2 className="App">Hy</h2>
-        <h2 className="App">Fluxbyte Technologies</h2>
+        <StateWithoutConstructor />
         <Student />
+        <StateWithConstructor />
+        <Children>I'm a Child</Children>
+        <Onclick />
       </>
     );
   }
