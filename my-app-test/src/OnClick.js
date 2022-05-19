@@ -13,7 +13,7 @@ class Onclick extends Component {
   }
   handleClick = (Id) => {
     console.log("Button Clicked", Id, this);
-    this.setState({ Name: " Jay" });
+    this.setState({ Name: " ReactNative" });
   };
 
   handleClickArg = () =>{
