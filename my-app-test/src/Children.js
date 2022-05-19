@@ -1,5 +1,6 @@
 import React from "react";
 
+// Function Based Component
 const Children = (props) => {
   return (
     <h1 className="App">
@@ -8,7 +9,7 @@ const Children = (props) => {
   );
 };
 
-// class based
+// class Based Component
 // class Children extends Component {
 //     render(){
 //         return <h1 className="App">Hello {this.props.children}</h1>
