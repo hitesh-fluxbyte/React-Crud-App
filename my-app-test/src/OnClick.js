@@ -6,17 +6,17 @@ class Onclick extends Component {
     super(props);
     this.state = {
       Id: 1,
-      Name: " ReactJs",
-      Tech: "JavaScript",
+      Name: " Python",
+      Tech: "ReactJs",
     };
     // this.handleClick = this.handleClick.bind(this);
   }
   handleClick = (Id) => {
     console.log("Button Clicked", Id, this);
-    this.setState({ Name: " ReactNative" });
+    this.setState({ Name: " ReactJs" });
   };
 
-  handleClickArg = () =>{
+  handleClickArg = () => {
     this.handleClick(this.state.Id);
   };
   render() {

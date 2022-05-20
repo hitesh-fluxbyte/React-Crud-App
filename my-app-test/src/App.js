@@ -1,46 +1,56 @@
 import React, { useState } from "react";
 import "./App.css";
 import Student from "./Student";
-import StateWithConstructor from "./State_With_Constructor";
+// import StateWithConstructor from "./State_With_Constructor";
 import StateWithoutConstructor from "./State_Without_Constructor";
-import Children from "./Children";
+// import Children from "./Children";
 import Onclick from "./OnClick";
+import useCustomCounter from "./Custom";
 
-// Function Based
 function App() {
-  const nameStateVariable = useState("Zala");
+  const data = useCustomCounter();
+  const nameStateVariable = useState("Gujarat");
   const handleClick = () => {
-    nameStateVariable[1]("Hitesh Zala");
-  }
+    nameStateVariable[1]("India");
+  };
+
   return (
     <>
       <StateWithoutConstructor />
       <Student />
-      <div className="App" >
-      <h1 >{nameStateVariable[0]}</h1>
-      <button type="button" className="btn btn-primary" onClick={handleClick}>Change</button>
+      <div className="App">
+        <h1>{nameStateVariable[0]}</h1>
+        <button type="button" className="btn btn-primary" onClick={handleClick}>
+          Change
+        </button>
       </div>
-      <Children>I'm a Child</Children>
-      <StateWithConstructor />
+
+      {/* <Children>I'm a Child</Children> */}
+      {/* <StateWithConstructor /> */}
       <Onclick />
+
+      <div className="App">
+        <h1>Counter Up: {data.count}</h1>
+        <button
+          className="btn btn-primary"
+          type="button"
+          onClick={data.handleIncrement}
+        >
+          Increment
+        </button>
+      </div>
+
+      <div className="App">
+        <h1>Counter Down: {data.count1}</h1>
+        <button
+          className="btn btn-warning"
+          type="button"
+          onClick={data.handleDecrement}
+        >
+          Increment
+        </button>
+      </div>
     </>
   );
 }
-
-
-// Class Based
-// class App extends React.Component {
-//   render() {
-//     return (
-//       <>
-//         <StateWithoutConstructor />
-//         <Student />
-//         <StateWithConstructor />
-//         <Children>I'm a Child</Children>
-//         <Onclick />
-//       </>
-//     );
-//   }
-// }
-
 export default App;
