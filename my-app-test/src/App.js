@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Student from "./Student";
 import StateWithConstructor from "./State_With_Constructor";
@@ -8,10 +8,18 @@ import Onclick from "./OnClick";
 
 // Function Based
 function App() {
+  const nameStateVariable = useState("Zala");
+  const handleClick = () => {
+    nameStateVariable[1]("Hitesh Zala");
+  }
   return (
     <>
       <StateWithoutConstructor />
       <Student />
+      <div className="App" >
+      <h1 >{nameStateVariable[0]}</h1>
+      <button type="button" className="btn btn-primary" onClick={handleClick}>Change</button>
+      </div>
       <Children>I'm a Child</Children>
       <StateWithConstructor />
       <Onclick />
